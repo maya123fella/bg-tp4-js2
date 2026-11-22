@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD-Persons — Étape 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="table_container">
+    <h1>CRUD-Persons</h1>
+    <p class="subtitle">TP4 JavaScript · Étape 5</p>
+    <div id="form_container"><div class="form-row">
+<div class="field"><label for="nom_input">Nom</label><input id="nom_input" type="text" placeholder="Nom"></div>
+<div class="field"><label for="prenom_input">Prénom</label><input id="prenom_input" type="text" placeholder="Prénom"></div>
+<div class="field"><label for="points_input">Points</label><input id="points_input" type="number" min="0" placeholder="Points"></div>
+<button class="btn-add" onclick="doNewData()">Ajouter</button></div><p id="notice" aria-live="polite"></p></div><div class="table-wrap"><table id="persons_table">
+<thead><tr><th class="col_number">N°</th><th class="col_text">Nom</th><th class="col_text">Prénom</th><th>Points</th><th class="col_chkbox">Select</th></tr></thead>
+<tbody id="persons_body"></tbody></table></div><div id="summary"><span id="summary_lines">0 ligne(s)</span><span id="summary_points">Total point(s) = 0</span></div><div id="container_btn"><button class="btn-consol" onclick="consoleTableau()">Console Tableau</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
